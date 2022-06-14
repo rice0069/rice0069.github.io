@@ -1,3 +1,36 @@
-h1 {
-    color: red;
+body {
+    font-size: 18px;
+}
+
+header, footer {
+    background-color: aqua;
+}
+
+.site-title {
+    color: darkorange;
+}
+
+/*Removes underline and adds a border box/background to the navigation link*/
+.nav a:link, a:visited {
+    background-color: aqua;
+    color: darkorange;
+    border: 3px solid black;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+.nav a:hover, a:focus {
+    background-color:chartreuse;
+}
+.hobbies-list {
+    list-style: square;
+}
+
+/* selects every odd line in the unordered list and changes the background to aqua */
+li:nth-child(odd) {
+    background: aqua;
+}
+
+#my-image {
+    box-shadow: 0px 0px 2px 1px black;
 }
