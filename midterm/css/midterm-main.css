@@ -121,7 +121,6 @@ nav ul {
 }
 
 /* Display's the li elements in a line and centers them */
-/*  */
 nav li {
     display: inline-block;
     width: 33%;
@@ -142,7 +141,7 @@ nav li a {
 }
 
 /* Sets it so that when one of the navbar links is clicked to move elswhere on the page, the text color doesnt change as its not actually linking to something else */
-.nav a:visited {
+nav a:visited {
     text-decoration: none;
     color: gold; 
 }
