@@ -10,7 +10,7 @@
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, strong, sub, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -53,68 +53,101 @@ table {
 /* --- After Reset --- */
 /* ------------------- */
 
+/* Keeps sizing properties within the border box throughout the project  */
 * {
     box-sizing: border-box;
 }
 
-/* Makes the BG color of of body red */
+/* Makes the BG color of of body red, 1rem of padding on the bottom and sets font family for all text */
+/* --- Never set sizes in the body --- */
 body {
-    position: absolute;
     background-color: #91230d;
-    margin-right: 20rem;
-    margin-left: 20rem;
     padding-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Changes line height and adds margin on the bottom to space out paragraphs */
+p {
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
 
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Set's width of the main content of the website to 1000px and centers it on the page with margin: 0 auto. */ 
+/* The background command gets rid of the annoying line between the navbar and header */
 .container {
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%; 
+    width: 1000px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+/* Position relative sets it so that any child element w/ position: absolute; (in this case, the heading text) will be contained within the size of the "relative" container */
+header {
+    position: relative;
 }
 
 #zed-wide {
     width: 100%;
+    height: 35rem;
 }
 
-
+/* Position is absolute to the header. So it fits within the header since it has the position relative tag*/
 .mainh1 {
-    font-size: 4em;
-    color:gold;
-    top: 20rem;
     position: absolute;
-    text-align: center;
-    width:100%
+    left: 20%;
+    font-size: 3em;
+    top: 17rem;
+    color:gold;
 }
 
 /* Controls all h2 tags in the file to be double rem */
 h2 {
     font-size: 2rem;
 }
-.nav ul {
+
+nav {
+    background-color: black;
+}
+
+nav ul {
     list-style: none;
 }
 
-.nav li {
-    display: inline;
-}
-
-.nav a {
-    float:left;
+/* Display's the li elements in a line and centers them */
+/*  */
+nav li {
+    display: inline-block;
+    width: 33%;
+    line-height: 3;
     text-align: center;
-    font-size: 1.5rem;
-    text-decoration: none;
     border-right: 3px solid #91230d;
-    width:33.3%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
 }
 
+/* Targets 3rd link (CONTACT) and removes the right border  */
+nav li:nth-child(3) {
+    border-right: 0;
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Sets it so that when one of the navbar links is clicked to move elswhere on the page, the text color doesnt change as its not actually linking to something else */
 .nav a:visited {
     text-decoration: none;
     color: gold; 
 }
 
-/* Creates main wrapper where the content of the site will be held. */
+/* Sets styling for most of the main content on the page */
 article { 
     font-size: 1.2rem;
     line-height: 1.5rem;
@@ -122,23 +155,24 @@ article {
     background-color: black;
     color: gold;
     width: 100%;
+    margin: 0 auto;
   
 }
 /* Creates 1rem of margin underneath the "Zed Description" h2 tag */
 #zedh2 {
     margin-bottom: 1rem;
-    margin-top: 1rem;
 }
 
-/* Makes the main paragraphs of text float to the left of the image and gives the image 1rem of margin to the right & below so the text isn't glued to the picture */
+/* Sets size, float and margin to the small image */
 #zed-small {
     float: left;
+    width: 250px;
+    height: 400px;
     margin-right: 1rem;
 }
 
-/* Creates 1rem of margin ontop and below the "Facts about Zed" h2 tag */
+/* Creates 1rem of margin below the "Facts about Zed" h2 tag */
 .fact-table h2{
-    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -147,7 +181,7 @@ article {
     margin-left: 2rem;
 }
 
-/* Creates  */
+/* Creates 1rem of margin around the "Contact to learn more" heading */
 .contact-h2 {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -157,49 +191,52 @@ article {
     margin-bottom: 1rem;
 }
 
-/* Creates a small border around contanct forms */
+/* Creates a small border around contanct forms and adds padding around the edges */
 .contact {
     border: 2px solid #91230d;
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 2rem 1rem 1rem 1rem;
 }
 
 form {
     display: block;
 }
 
-/* Changes margin & width of the input boxes for "Your Name" & "Your email */
+/* Sets some margin underneath every  */
+form div {
+    margin-bottom: 1.5rem;
+}
+
+/* Changes width of the input boxes for "Your Name" & "Your email */
 #name, #email {
-    margin-bottom: 1rem;
     width: 100%; 
 }
 
-/* Changes margin, width & height for the message textarea */
+/* Changes width & height for the message textarea */
 textarea {
-    margin-bottom: 1rem;
     width: 100%;
     height: 10rem;
 }
 
-.radiobutton h3 {
-    margin-bottom: 1rem;
-}
-
-.radiobutton {
-    margin-bottom: 1rem;
-}
-
+/* Styles the send button at the bottoms of the contact section of the page */
 .sendbutton a {
     text-decoration: none;
     border: 2px solid gold;
-    color:#91230d;
+    width: 100%;
+    color: #91230d;
     padding: .5rem;
-    margin: 1rem;
 }
 
+/* When the contact button is hovered, it will be gold instead of black */
 .sendbutton a:hover {
     background-color: gold;
 }
 
+/* Keeps the font color the same after clicking on the button */
+.sendbutton a:visited {
+    color: #91230d;
+}
+
+/* Sets styling for the footer */
 footer  {
     background-color: black;
     color:#91230d;
@@ -209,7 +246,9 @@ footer  {
     
 }
 
-.clearfix:before {
+/* Makes it so that any class with the additional class name "clearfix" will be cleared after the element. */
+/* Only use when the element is being floated */
+.clearfix:after {
     content: "";
     display: block;        
     clear: both;

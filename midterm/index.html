@@ -8,75 +8,88 @@
     <link rel="stylesheet" href="css/midterm-main.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img id="zed-wide"  src="images/zed-wide.jpg" alt="Wide image of zed"/>
+    <!-- Main container for the whole project -->
+    <div class="container">
+        <header>
+            <!-- Set's the image as the header and put some text over it -->
             <h1 class="mainh1">Zed, The Master of Shadows</h1>
+            <img id="zed-wide" src="images/zed-wide.jpg" alt="Wide image of zed">
+            <!-- Nav bar that scrolls to points on the page when clicked -->
             <nav class="nav">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#zedh2">STORY</a></li>
-                <li><a href="#contact-form">CONTACT</a></li>
-            </ul>
-        </div>
-        </nav>
-    </header>
-    <article>
-            <div class="container clearfix"> 
-                    <h2 id="zedh2">Zed Description</h2>
-                    <img id="zed-small" width="250" height="400" src="images/zed-small.jpg" alt="Close up of Zed">
-                        <p>
-                            Zed's gameplay is very flashy, clean and skillful. Being an assasin type champion, his role in the game is to sneak up behind the enemy team, pick off their strongest members and escape back to safety in order to return and help his team win the fight from there. 
-                        </p>
-                        <br>
-                        <p>
-                            According to lore, Zed is the leader of an organization he created called "The Order of Shadow". He wields shadow magic and expert martial artistry to quickly assasinate enemies.   
-                        </p>
-                        <br>
-                        <p>
-                            Zed is a character that is really special to me. I've been playing League of Legends for roughly 9 years, and for atleast 7-8 of those years, Zed has been my main character. Crowds cheer when professional players choose him in tournament matches, many incredible highlight montage videos are made for this character. His style, gameplay and the prestige that I feel when I play him all comes together to make playing Zed an incredible experience.
-                        </p>
-                <div class="fact-table clearfix">
-                    <h2>Facts about Zed</h2>
-                    <ul class="facts">
-                        <li>Zed was released as a playable character on November 13th 2012.</li>
-                        <li>Zed is typically played mid lane, but can be played in the jungle. </li>
-                        <li>Zed benefits most from building items with lethality and armor penetration stats.</li>
-                        <li>Zed's toughest matchups are mages with lots of crowd control abilities, like Lissandra, Malzahar & Anivia.</li>
-                    </ul> 
-                </div>
-                <h2 class="contact-h2 clearfix">Contact to learn more</h2>
-                <div class="contact clearfix">
-                    <form id="contact-form">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#zedh2">STORY</a></li>
+                    <li><a href="#contact-form">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Wrapper that contains the content of the page -->
+        <article>
+            <!-- Creates a div for the description part of the page, along with the smaller image that has float to the left, hence the clearfix since we need to clear that float
+            later -->
+            <div class="description clearfix"> 
+                <h2 id="zedh2">Zed Description</h2>
+                <img id="zed-small" src="images/zed-small.jpg" alt="Close up of Zed">
+                <p>
+                    Zed's gameplay is very flashy, clean and skillful. Being an assasin type champion, his role in the game is to sneak up behind the enemy team, pick off their strongest members and escape back to safety in order to return and help his team win the fight from there. 
+                </p>
+                <p>
+                    According to lore, Zed is the leader of an organization he created called "The Order of Shadow". He wields shadow magic and expert martial artistry to quickly assasinate enemies.   
+                </p>
+                <p>
+                    Zed is a character that is really special to me. I've been playing League of Legends for roughly 9 years, and for atleast 7-8 of those years, Zed has been my main character. Crowds cheer when professional players choose him in tournament matches, many incredible highlight montage videos are made for this character. His style, gameplay and the prestige that I feel when I play him all comes together to make playing Zed an incredible experience.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laudantium quia ducimus velit eius iste enim adipisci, debitis consequatur. Maxime dolorem earum ad asperiores nostrum consequuntur cum. Facere, sunt! Velit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse rerum sunt doloribus minus eveniet facere quas hic corporis commodi placeat eius ea ratione earum repellendus, animi rem corrupti tempora temporibus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis fugit provident quisquam quidem necessitatibus. Quos quae commodi asperiores distinctio, itaque laudantium sit at tempora illum, recusandae corrupti iusto dignissimos nisi.
+                </p>
+            </div>
+            <!-- Creates a div for the fact table underneath the zed image and description -->
+            <div class="fact-table">
+                <h2>Facts about Zed</h2>
+                <!-- Creates and unordered list that lists the facts -->
+                <ul class="facts">
+                    <li>Zed was released as a playable character on November 13<sup>th</sup> 2012.</li>
+                    <li>Zed is typically played <strong>Mid lane</strong>, but can be played in the <strong>Jungle</strong>. </li>
+                    <li>Zed benefits most from building items with lethality and armor penetration stats.</li>
+                    <li>Zed's toughest matchups are mages with lots of crowd control abilities, like Lissandra, Malzahar & Anivia.</li>
+                </ul> 
+            </div>
+            <h2 class="contact-h2">Contact to learn more</h2>
+            <!-- Creates a div for the contact table towards the bottom of the page -->
+            <div class="contact">
+                <form id="contact-form" action="#" method="GET">
+                    <div>
                         <label for="name">Your Name</label>
                         <input id="name" type="text" name="name"> 
-                    </form>
-                    <form>
+                    </div>
+                    <div>
                         <label for="email">Your Email</label>
                         <input  id="email" type="email" name="email">
-                    </form>
-                    <form>
+                    </div>
+                    <div>
                         <label for="message">Your Message</label>
                         <textarea id="message"></textarea>
-                    </form>
+                    </div>
                     <h3>Would you like to contact Zed?</h3>
-                    <form class="radiobutton">
+                    <div class="radiobutton">
                         <label for="yes">Yes</label>
                         <input type="radio" id="yes" name="radio-contact" value="y">
                         <label for="no">No</label>
                         <input type="radio" id="no" name="radio-contact" value="n">
                         <label for="maybe">Maybe</label>
                         <input type="radio" id="maybe" name="radio-contact" value="m">
-                    </form>
+                    </div>
+                    <!-- Creates a div for the send button at the bottoms of the contacts section -->
                     <div class="sendbutton">
                         <nav class="send button"><a href="#">SEND</a></nav>
                     </div>
-                </div>
-                <footer>
-                    &copy; Zed, The Master of Shadows 2013-2022 - v2
-                </footer>
-            </div>              
-    </article>      
+                </form>
+            </div>
+            <footer>
+                &copy; Zed, The Master of Shadows 2013-2022 - v3
+            </footer>           
+        </article>    
+    </div>  
 </body>
 </html>
 
