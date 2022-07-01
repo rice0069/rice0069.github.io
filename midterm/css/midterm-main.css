@@ -6,7 +6,7 @@
    License: none (public domain)
 */
 
- /* html, body, div, span, applet, object, iframe,
+ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -25,18 +25,17 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-} */
+}
 /* HTML5 display-role reset for older browsers */
-/*article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -48,7 +47,7 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-} */
+}
 
 /* ------------------- */
 /* --- After Reset --- */
@@ -56,114 +55,158 @@ table {
 
 * {
     box-sizing: border-box;
-    
 }
 
 /* Makes the BG color of of body red */
 body {
-    background-color: #91230d;
-    
-}
-
-.header {
-    position: abosolute;
-    top: 0px;
-    
-}
-
-.mainheading {
-    color: gold;
     position: absolute;
-    top: 25rem;
-    left: 25rem;
-    
+    background-color: #91230d;
+    margin-right: 20rem;
+    margin-left: 20rem;
+    padding-bottom: 1rem;
 }
+
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%; 
+}
+
+#zed-wide {
+    width: 100%;
+}
+
+
+.mainh1 {
+    font-size: 4em;
+    color:gold;
+    top: 20rem;
+    position: absolute;
+    text-align: center;
+    width:100%
+}
+
 /* Controls all h2 tags in the file to be double rem */
 h2 {
     font-size: 2rem;
 }
-
-/* Controls all h3 tags in the file to be 1.5 rem */
-h3 {
-    font-size: 1.5rem;
-}
-
-.nav {
-    display: inline;
-    text-align: center;
-}
-
 .nav ul {
     list-style: none;
-    padding: 0;
 }
 
-
- .nav li {
+.nav li {
     display: inline;
-    border: 3px solid gold;
-    padding: 1rem 10rem 1rem 10rem;
+}
+
+.nav a {
+    float:left;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-right: 3px solid #91230d;
+    width:33.3%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav a:visited {
+    text-decoration: none;
+    color: gold; 
 }
 
 /* Creates main wrapper where the content of the site will be held. */
-.wrapper { 
-    font-size: 1.5rem;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 2rem;
-    width: 70%;
-    height: auto;
-    margin: auto;
+article { 
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 1rem;
     background-color: black;
     color: gold;
+    width: 100%;
+  
+}
+/* Creates 1rem of margin underneath the "Zed Description" h2 tag */
+#zedh2 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
-/* Creates a margin of 1rem on the right and left side of the wrapper (black background) essentially squeezing in all the content 1 rem inwards on either sied */
-.content  {
-    margin: 0 1rem 0 1rem;
-}
-
-/* Makes the main paragraphs of text float to the left of the image and gives the image 1rem of margin so the text isn't glued to the picture */
+/* Makes the main paragraphs of text float to the left of the image and gives the image 1rem of margin to the right & below so the text isn't glued to the picture */
 #zed-small {
     float: left;
-    margin: 0 1rem 0 0;
+    margin-right: 1rem;
+}
+
+/* Creates 1rem of margin ontop and below the "Facts about Zed" h2 tag */
+.fact-table h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Creates 2rem of margin left of the undordered list to give it some space in the page  */
+.facts {
+    margin-left: 2rem;
+}
+
+/* Creates  */
+.contact-h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact h3 {
+    margin-bottom: 1rem;
 }
 
 /* Creates a small border around contanct forms */
 .contact {
     border: 2px solid #91230d;
+    padding: 2rem 1rem 2rem 1rem;
 }
 
 form {
-    margin: 20px;
+    display: block;
 }
 
 /* Changes margin & width of the input boxes for "Your Name" & "Your email */
 #name, #email {
+    margin-bottom: 1rem;
     width: 100%; 
 }
 
-/* Changes margin, width & height f */
+/* Changes margin, width & height for the message textarea */
 textarea {
-    margin: 1rem 0 0 0;
+    margin-bottom: 1rem;
     width: 100%;
-    height: 8rem;
+    height: 10rem;
 }
 
-.contact h3 {
-    margin-left: 1rem;
+.radiobutton h3 {
+    margin-bottom: 1rem;
 }
 
-.sendbutton {
-    display: inline-block;
+.radiobutton {
+    margin-bottom: 1rem;
+}
+
+.sendbutton a {
+    text-decoration: none;
     border: 2px solid gold;
-    padding: 5px;
+    color:#91230d;
+    padding: .5rem;
     margin: 1rem;
 }
 
-footer{
+.sendbutton a:hover {
+    background-color: gold;
+}
+
+footer  {
+    background-color: black;
+    color:#91230d;
     font-size: 0.8rem;
     text-align: right;
-    margin-right: 1rem;
+    padding-top: 1rem;
+    
 }
 
 .clearfix:before {
