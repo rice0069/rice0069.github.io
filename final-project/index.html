@@ -13,10 +13,10 @@
             <img id="logo" src="images/logo.png" alt="company logo">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about-us">About Us</a>
+                <li><a href="#digital">Services</a></li>
+                <li><a href="#john">Team</a></li>
+                <li><a href="#contact-us">Contact</a></li>
             </ul>
             
             <form>
@@ -31,9 +31,10 @@
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia nesciunt veniam quaerat laboriosam accusantium praesentium porro possimus quas! Quo exercitationem officiis repellat et iste modi quam quidem vitae sit. Dicta!
         </p>
+        <button type="button">Connect with us<i class="fa-solid fa-caret-right"></i></button> 
     </div>
 
-    <div class="about-us container">
+    <div class="about-us">
         <img id="about-us" src="images/about-us.jpg" alt="Lounge with a pool table">
         <h1>About Us</h1>
         <p>
@@ -44,7 +45,7 @@
         </p>
     </div>
 
-    <div class="services container">
+    <div class="services">
         <img id="digital" src="images/digital.jpg" alt="Person working on a phone and a laptop">
         <h1>Our Services</h1>
         <div class="digital-transformation">
@@ -52,6 +53,7 @@
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ea molestias officia consequatur libero quidem ratione laudantium atque eveniet sequi necessitatibus suscipit reprehenderit voluptate, dolores voluptates illum itaque laboriosam nostrum.
             </p>
+            <button type="button">Digital Plans<i class="fa-solid fa-caret-right"></i></button>
         </div>
         <div class="marketing">
             <img id="marketing" src="images/marketing.jpg" alt="Image of a laptop">
@@ -59,6 +61,7 @@
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ad fugiat nemo quibusdam! Molestias nulla labore vel, aperiam dolorum accusantium quasi dolore adipisci reiciendis, porro laborum architecto esse quidem minima!
             </p>
+            <button type="button">Marketing Plans<i class="fa-solid fa-caret-right"></i></button>
         </div>
         <div class="video-production">
             <img id="video" src="images/video.jpg" alt="Person holding phone with Youtube logo on the screen">
@@ -66,6 +69,7 @@
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam saepe assumenda hic dignissimos, nihil praesentium temporibus dolorem aspernatur explicabo quaerat esse quas maiores. Laudantium, laboriosam saepe et eaque earum illo.
             </p>
+            <button type="button">Video Plans<i class="fa-solid fa-caret-right"></i></button>
         </div>
         <div class="web-development">
             <img id="web" src="images/web.jpg" alt="Phone and a big stylus on grid paper">
@@ -73,6 +77,7 @@
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi labore quod odio rem, ut obcaecati itaque necessitatibus incidunt, accusamus iste error ea, repellendus est quis. Aut exercitationem voluptates sed quis.
             </p>
+            <button type="button">Web Plans<i class="fa-solid fa-caret-right"></i></button>
         </div>
         <div class="print">
             <img id="printt" src="images/print.jpg" alt="newspaper stands on the side of a road">
@@ -80,18 +85,21 @@
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor fugiat, ad deserunt at labore iusto obcaecati cupiditate accusantium aliquid, maiores commodi ullam accusamus deleniti, similique quibusdam porro neque beatae veniam!
             </p>
+            <button type="button">Print Plans<i class="fa-solid fa-caret-right"></i></button>
         </div>
     </div>
 
-    <div class="vision container">
+    <div class="vision">
         <h2>Our Vision</h2>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatum quidem voluptatem sint rem odit quas distinctio eveniet atque eum, accusamus autem possimus placeat vitae necessitatibus est consequuntur optio iusto.
         </p>
+        <button type="button">Learn More<i class="fa-solid fa-caret-right"></i></button>
     </div>
 
-    <div class="our-team container">
+    <div class="our-team">
         <div class="john-pic">
+            <h1>Our Team</h1>
             <img id="john" src="images/john.jpg" alt="Picture of John Doe">
         </div>
         <div class="john-doe">
@@ -115,5 +123,59 @@
             </p>
         </div>
     </div>
+
+    <div class="contact-us">
+        <h1>Contact Us</h1>
+        <div class="contact">
+            <form id="contact-form" action="#" method="GET">
+                <div>
+                    <label for="name">Full Name</label>
+                    <input id="name" type="text" name="name">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="text" name="email">
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message"></textarea>
+                </div>
+                <div>
+                    <button type="button">Send</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="hours">
+            <h2>Hours of Operation</h2>
+            <table>    
+                <thead>
+                    <tr>
+                        <th>Days</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday - Friday</td>
+                        <td>9am-6pm</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday - Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+                </tbody>  
+            </table>
+        </div>
+
+        <div class="google-maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179452.46320206203!2d-76.03508816718751!3d45.3499278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1658960606288!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Copyright Three Star Media, 2020</p>
+        <p>All images are taken from Unsplash</p>
+    </footer>
 </body>
 </html>
