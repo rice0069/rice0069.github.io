@@ -161,7 +161,7 @@ article {
 }
 
 /* Sets size, float and margin to the small image */
-#zed-small {
+#zed-small{
     float: left;
     width: 250px;
     height: 400px;
@@ -169,7 +169,7 @@ article {
 }
 
 /* Creates 1rem of margin below the "Facts about Zed" h2 tag */
-.fact-table h2{
+.fact-table h2 {
     margin-bottom: 1rem;
 }
 
