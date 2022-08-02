@@ -1,0 +1,413 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------------ */
+/* ----- END OF RESET ----- */
+/* ------------------------ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+h1 { 
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h2 { 
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 0 1rem 0;
+}
+
+h3 { 
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.container > h1 {
+    margin-top: 1rem;
+}
+
+section {
+    color: black; 
+}
+
+section p { 
+    padding: 0 1rem 2rem 1rem;
+}
+
+section h2 {
+    padding-left: 1rem;
+    padding-top: 1rem;
+
+}
+
+section a {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+section a > i {
+    font-size: 2rem;
+    margin-left: .5rem;
+}
+
+article {
+    color: white;
+    padding: 1rem;
+}
+
+article p {
+    line-height: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+article a {
+    font-size: 1.3rem;
+}
+
+a:link {
+    color: #c78c06;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #c78c06;
+    text-decoration: none;
+}
+
+a:hover {
+    color: purple;
+    text-decoration: none;
+}
+
+header {
+    background-color: #222;
+    padding: 1rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+
+.menu ul li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.menu ul li:nth-child(1) {
+    background-color: green;
+    color: black;
+}
+
+#search {
+    height: 2.5rem;
+}
+
+.searchbutton {
+    border: 1px solid #c78c06;
+    padding: .7rem;
+    float: right;
+}
+
+.welcome {
+    background-image: url(../images/main-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 0 5rem 0;
+}
+
+.welcome-info {
+    width: 100%;
+    background: rgba(34,34,34,0.84);
+    padding: 2rem 1rem 3rem 1rem;
+}
+
+.welcome-info > p {
+    margin-bottom: 2rem;
+}
+
+.welcome-info > h1 {
+    line-height: 7rem;
+    font-size: 5rem;
+
+}
+
+.welcome-info a {
+    color: black;
+    background-color: #c78c06;
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+
+.welcome-info a i {
+    font-size: 1.5rem;
+    margin-left: .5rem;
+}
+
+.welcome-button {
+    color: black;
+    background-color: #c78c06;
+}
+
+.about-us {
+    background-color: #ffe6ac;
+    color: black;
+}
+
+#about-us {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.digital-transformation {
+    background-color: #ffe6ac;
+    padding-bottom: 3rem;
+}
+
+#digital {
+    width: 100%;
+}
+
+.digital-transformation > a {
+    background-color:#222;
+    color: white;
+    padding: 2rem;
+}
+
+.marketing {
+    background-color: #ffe6ac;
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+#marketing {
+    width: 100%;
+}
+
+.marketing > a {
+    background-color:#222;
+    color: white;
+    padding: 2rem;
+}
+
+.video-production {
+    background-color: #ffe6ac;
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+#video {
+    width: 100%;
+}
+
+.video-production > a {
+    background-color:#222;
+    color: white;
+    padding: 2rem;
+}
+
+.web-development {
+    background-color: #ffe6ac;
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+#web {
+    width: 100%;
+}
+
+.web-development > a {
+    background-color:#222;
+    color: white;
+    padding: 2rem;
+}
+
+.print {
+    background-color: #ffe6ac;
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+#print {
+    width: 100%;
+}
+
+.print > a {
+    background-color:#222;
+    color: white;
+    padding: 2rem;
+}
+
+.vision {
+    background-image: url(../images/vision.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 3rem;
+}
+
+.vision > a {
+    background-color:#222;
+    border: 1px solid #c78c06;
+    color: white;
+    padding: 2rem;
+}
+
+.vision > p {
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+.vision > a > i {
+    font-size: 2rem;
+    margin-left: .5rem;
+}
+
+#team {
+    margin: 1rem 0 0 1rem;
+}
+
+.john-doe {
+    background-color: #ffe6ac;
+}
+
+.bob-rite {
+    background-color: #ffe6ac;
+    margin-top: 1rem;
+}
+
+#john {
+    width: 100%;
+}
+
+#bob {
+    width: 100%;
+}
+
+hr {
+    border-top: 3px solid #c78c06;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#name, #email {
+    width: 100%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+
+#message {
+    width: 100%;
+    height: 5rem;
+    margin-top: .3rem;
+    margin-bottom: 2rem;
+}
+
+.contact a {
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: #222;
+    padding: .3rem;
+}
+
+.contact label {
+    margin-bottom: 1rem;
+}
+
+.hours h2 {
+    padding-top: 2rem;
+}
+
+table {
+    width: 100%;
+
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 1rem; 
+}
+
+th {
+    background-color: #ffe6ac;
+}
+iframe {
+    width: 100%;
+}
+
+footer {
+    background-color: #222;
+    color: #c78c06;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
