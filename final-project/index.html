@@ -20,29 +20,34 @@
     
 <body> 
     <header>
-        <div class="headerimage">
-                <img id="logo" src="images/logo.png" alt="company logo">
+        <div class="container">
+            <div class="headerimage">
+                    <img id="logo" src="images/logo.png" alt="company logo">
+            </div>
+            <nav class="menu">
+                <!-- <div class="headerimage">
+                    <img id="logo" src="images/logo.png" alt="company logo">
+                </div>   -->
+                <!-- Navbar -->
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about-us">About Us</a>
+                    <li><a href="#digital">Services</a></li>
+                    <li><a href="#john">Team</a></li>
+                    <li><a href="#contact-us">Contact</a></li>
+                </ul>
+                <!-- Searchbar -->
+                <form class="searchbar">
+                    <input id="search" type="text" placeholder="Search">
+                    <nav class="searchbutton"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></nav>
+                </form> 
+            </nav> 
         </div>
-        <nav class="menu">  
-            <!-- Navbar -->
-            <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about-us">About Us</a>
-                <li><a href="#digital">Services</a></li>
-                <li><a href="#john">Team</a></li>
-                <li><a href="#contact-us">Contact</a></li>
-            </ul>
-             <!-- Searchbar -->
-            <form class="searchbar">
-                <input id="search" type="text" placeholder="Search">
-                <nav class="searchbutton"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></nav>
-            </form> 
-        </nav>  
     </header>
 
     <!-- welcome container -->
     <article class="welcome">
-        <div class="welcome-info">
+        <div class="welcome-info container">
             <h1>Welcome to Three Star Media</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tempore, vero similique reprehenderit eligendi et soluta beatae exercitationem distinctio neque rem aperiam possimus quod fuga. Sapiente animi nam accusantium vel?
@@ -52,14 +57,19 @@
     </article>
     <!-- about-us container -->
     <article class="about-us">
-        <img id="about-us" src="images/about-us.jpg" alt="Lounge with a pool table">
-        <h1>About Us</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, illum? Hic minima sint libero nisi voluptas, vero error ab a impedit consequuntur, ratione molestias fugiat. Corrupti, ducimus. Culpa, voluptate incidunt?
-        </p>
-        <p>
-            Sequi consequatur, doloremque ipsa veritatis totam earum assumenda libero dolorem alias maiores itaque sit unde voluptatum vitae? Eveniet quaerat corrupti saepe, sed cumque voluptate, asperiores iste inventore suscipit voluptatum ea!
-        </p>
+        <div class="about-us-info container">
+            <img id="about-us" src="images/about-us.jpg" alt="Lounge with a pool table">
+            
+            <div class="about-us-content">
+                <h1>About Us</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, illum? Hic minima sint libero nisi voluptas, vero error ab a impedit consequuntur, ratione molestias fugiat. Corrupti, ducimus. Culpa, voluptate incidunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, illum? Hic minima sint libero nisi voluptas, vero error ab a impedit consequuntur, ratione molestias fugiat. Corrupti, ducimus. Culpa, voluptate incidunt?
+                </p>
+                <p>
+                    Sequi consequatur, doloremque ipsa veritatis totam earum assumenda libero dolorem alias maiores itaque sit unde voluptatum vitae? Eveniet quaerat corrupti saepe, sed cumque voluptate, asperiores iste inventore suscipit voluptatum ea!Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, illum?
+                </p>
+            </div>
+        </div>
     </article>
 
     <div class="container">
@@ -78,7 +88,7 @@
                 <img id="marketing" src="images/marketing.jpg" alt="Image of a laptop">
                 <h2>Marketing</h2>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ad fugiat nemo quibusdam! Molestias nulla labore vel, aperiam dolorum accusantium quasi dolore adipisci reiciendis, porro laborum architecto esse quidem minima!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ea molestias officia consequatur libero quidem ratione laudantium atque eveniet sequi necessitatibus suscipit reprehenderit voluptate, dolores voluptates illum itaque laboriosam nostrum.
                 </p>
                 <a href="#">Marketing Plans<i class="fa-solid fa-caret-right"></i></a>
             </div>
@@ -86,7 +96,7 @@
                 <img id="video" src="images/video.jpg" alt="Person holding phone with Youtube logo on the screen">
                 <h2>Video Production</h2>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam saepe assumenda hic dignissimos, nihil praesentium temporibus dolorem aspernatur explicabo quaerat esse quas maiores. Laudantium, laboriosam saepe et eaque earum illo.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ea molestias officia consequatur libero quidem ratione laudantium atque eveniet sequi necessitatibus suscipit reprehenderit voluptate, dolores voluptates illum itaque laboriosam nostrum.
                 </p>
                 <a href="#">Video Plans<i class="fa-solid fa-caret-right"></i></a>
             </div>
@@ -94,7 +104,7 @@
                 <img id="web" src="images/web.jpg" alt="Phone and a big stylus on grid paper">
                 <h2>Web Development</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi labore quod odio rem, ut obcaecati itaque necessitatibus incidunt, accusamus iste error ea, repellendus est quis. Aut exercitationem voluptates sed quis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ea molestias officia consequatur libero quidem ratione laudantium atque eveniet sequi necessitatibus suscipit reprehenderit voluptate, dolores voluptates illum itaque laboriosam nostrum.
                 </p>
                 <a href="#">Web Plans<i class="fa-solid fa-caret-right"></i></a>
             </div>
@@ -102,7 +112,7 @@
                 <img id="print" src="images/print.jpg" alt="newspaper stands on the side of a road">
                 <h2>Print</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor fugiat, ad deserunt at labore iusto obcaecati cupiditate accusantium aliquid, maiores commodi ullam accusamus deleniti, similique quibusdam porro neque beatae veniam!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ea molestias officia consequatur libero quidem ratione laudantium atque eveniet sequi necessitatibus suscipit reprehenderit voluptate, dolores voluptates illum itaque laboriosam nostrum.
                 </p>
                 <a href="#">Print Plans<i class="fa-solid fa-caret-right"></i></a>
             </div>
@@ -110,15 +120,18 @@
     </div>
     <!-- vision container -->
     <article class="vision">
-        <h2>Our Vision</h2>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatum quidem voluptatem sint rem odit quas distinctio eveniet atque eum, accusamus autem possimus placeat vitae necessitatibus est consequuntur optio iusto.
-        </p>
-        <a href="#">Learn More<i class="fa-solid fa-caret-right"></i></a>
+        <div class="container">
+            <h2>Our Vision</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatum quidem voluptatem sint rem odit quas distinctio eveniet atque eum, accusamus autem possimus placeat vitae necessitatibus est consequuntur optio iusto.
+            </p>
+            <a href="#">Learn More<i class="fa-solid fa-caret-right"></i></a>
+        </div>
     </article>
 
-    <h1 id="team">Our Team</h1>
+    
     <div class="container">
+        <h1 id="team">Our Team</h1>
         <!-- our-team container -->
         <section class="our-team">
             <div class="john-doe">
@@ -149,11 +162,11 @@
                 <h2>Send us a message</h2>
                 <!-- Creates the input fields for name/email/message -->
                 <form id="contact-form" action="#" method="GET">
-                    <div>
+                    <div class="one">
                         <label for="name">Full Name</label>
                         <input id="name" type="text" name="name">
                     </div>
-                    <div>
+                    <div class="two">
                         <label for="email">Email</label>
                         <input id="email" type="text" name="email">
                     </div>
@@ -161,7 +174,7 @@
                         <label for="message">Message</label>
                         <textarea id="message"></textarea>
                     </div>
-                    <div>
+                    <div class="three">
                         <a href="#">Send</a>
                     </div>
                 </form>
