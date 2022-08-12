@@ -51,10 +51,12 @@ table {
 /* ----- END OF RESET ----- */
 /* ------------------------ */
 
+/* Includes padding/border in the elements total width and height */
 * {
     box-sizing: border-box;
 }
 
+/* sets all font on the main body of the site to 'Open Sans' */
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -83,6 +85,7 @@ h3 {
     
 }
 
+/* sets max width, centers & adds 1rem of padding to any class with 'container' in it, this is to keep the content of the site lined up and centered on the site */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -93,6 +96,7 @@ h3 {
     margin-top: 1rem;
 }
 
+/* Sets font colors to all sections in the html to black */
 section {
     color: black; 
 }
@@ -117,6 +121,7 @@ section a > i {
     margin-left: .5rem;
 }
 
+/* Sets all fonts to inside article tags to white and adds 1 rem of padding around article tags */
 article {
     color: white;
     padding: 1rem;
@@ -155,6 +160,7 @@ header {
     background-color: #c78c06;
 }
 
+/* adds flexbox to navbar menu and displays them in a column and centers content in mobile view */
 .menu {
     background-color: #222;
     display: flex;
@@ -198,6 +204,7 @@ header {
     width: calc(100% - 50px);
 }
 
+/* Styling for the search button next tot he searchbar in the nav menu */
 .searchbutton {
     border: 1px solid #c78c06;
     width: 50px;
@@ -207,6 +214,7 @@ header {
     float: right;
 }
 
+/* sets background image for the welcome page */
 .welcome {
     background-image: url(../images/main-banner.jpg);
     background-repeat: no-repeat;
@@ -214,6 +222,7 @@ header {
     padding: 5rem 0 5rem 0;
 }
 
+/* Creates a slightly transparent black box behind the welcome text under the nav bar */
 .welcome-info {
     width: 100%;
     background: rgba(34,34,34,0.84);
@@ -230,6 +239,7 @@ header {
 
 }
 
+/* styles the "connect with us" button under welcome information */
 .welcome-info a {
     color: black;
     background-color: #c78c06;
@@ -242,13 +252,7 @@ header {
     margin-left: .5rem;
 }
 
-.welcome-button {
-    color: black;
-    background-color: #c78c06;
-}
-
 .about-us {
-    
     background-color: #ffe6ac;
     color: black;
 }
@@ -271,6 +275,7 @@ header {
     background-color:#222;
     color: white;
     padding: 2rem;
+    margin-right: 1rem;
 }
 
 .marketing {
@@ -287,6 +292,7 @@ header {
     background-color:#222;
     color: white;
     padding: 2rem;
+    margin-right: 1rem;
 }
 
 .video-production {
@@ -303,6 +309,7 @@ header {
     background-color:#222;
     color: white;
     padding: 2rem;
+    margin-right: 1rem;
 }
 
 .web-development {
@@ -319,6 +326,7 @@ header {
     background-color:#222;
     color: white;
     padding: 2rem;
+    margin-right: 1rem;
 }
 
 .print {
@@ -335,8 +343,10 @@ header {
     background-color:#222;
     color: white;
     padding: 2rem;
+    margin-right: 1rem;
 }
 
+/* sets background image for "our-vision" article and adds padding to the bottom */
 .vision {
     background-image: url(../images/vision.jpg);
     background-repeat: no-repeat;
@@ -345,6 +355,7 @@ header {
     padding-bottom: 3rem;
 }
 
+/* Styles the "Learn more" button in the "our-vision" article */
 .vision .container > a {
     background-color:#222;
     border: 1px solid #c78c06;
@@ -383,6 +394,7 @@ header {
     width: 100%;
 }
 
+/* Styles the horizontal lines in the info sections of "our-team" */
 hr {
     border-top: 3px solid #c78c06;
     margin-left: 1rem;
@@ -433,18 +445,22 @@ iframe {
     width: 100%;
 }
 
+/* styles the footer for the site */
 footer {
     background-color: #222;
     color: #c78c06;
     padding: 2rem 1rem 1rem 1rem;
 }
 
+/* underlines the "Unsplash" text in the footer */
 .underline {
     text-decoration-line: underline;
 }
 
-
+/* Media querie for when the body is greater than or equal to 760px*/
 @media screen and (min-width: 760px) {
+    
+    /* Changes the navbar menu into a row rather than a column */
     header .container {
         display: flex;
         flex-direction: row;
@@ -452,7 +468,6 @@ footer {
     
     header {
         padding-bottom: 1rem;
-        /* display: flex; */
     }
 
     .headerimage {
@@ -464,7 +479,8 @@ footer {
         width: 100%;
         flex-direction: row;
     }
-   
+    
+    /* adds flex to the ul items in the navbar in order to place them horizontally*/
     .menu ul {
         background-color:#222;
         width: 100%;
@@ -478,7 +494,7 @@ footer {
 
     .welcome {
         background-position: center;
-        background-size: center;
+        background-size: cover;
         align-items: center;
     }
 
@@ -486,6 +502,7 @@ footer {
         margin: 0 auto;
     }
 
+    /* adds flex and styles the image in the "about-us" article */
     #about-us {
         display: flex;
         width: 500px;
@@ -494,6 +511,7 @@ footer {
         float: left;
     }
 
+    /* adds flex to and styles the about us article  */
     .about-us {
         display: flex;
         width:100%;
@@ -501,6 +519,7 @@ footer {
         padding: 0;
     }
 
+    /* displays the text in the "about-us" section to the right of the image */
     .about-us-info {
         width: 100%;
         flex-direction: row;
@@ -509,14 +528,17 @@ footer {
     .marketing {
         margin-top: 0;
     }
-
+    
+    /* sets the grid areas for each grid item in the "our-services" section */
     .digital-transformation {grid-area: d;}
     .marketing {grid-area: m;}
     .video-production {grid-area: v;}
     .web-development {grid-area: w;}
     .print {grid-area: p;}
 
+    /* lays out the grid for the "our-services" section */
     .services {
+        /* align-items: center; */
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         column-gap: 1rem;
@@ -525,7 +547,14 @@ footer {
         "d d d m m m"
         "v v w w p p"
     }
-
+    
+    /* widens and centers all the buttons in the "our-services" section by turning them into block level elements and centers the text within the button */
+    .services a {
+        display: block;
+        text-align: center;
+    }
+   
+    /* styles "learn more" button in the "our-vision" article to better fit the larger view */
     .vision .container > a {
         background-color:#222;
         border: 1px solid #c78c06;
@@ -550,6 +579,7 @@ footer {
         margin-top: 0;
     }
 
+    /* sets the grid areas for each grid item in the "our-team" section */
     #john {grid-area: e;}
     #bob {grid-area: f;}
     .john-doe {grid-area: w;}
@@ -561,10 +591,9 @@ footer {
         grid-template-areas: 
         "e e w w"
         "z z f f"
-
     }
 
-
+    /* sets the grid areas for each grid item in the "contact-us" section */
     .contact {grid-area: a;}
     .hours {grid-area: b;}
     .google-maps {grid-area: c;}
@@ -577,11 +606,4 @@ footer {
         "a a c c"
         "b b b b"
     }
-
-    .clearfix:after {
-        content: "";
-        display: contents;
-        clear: both;
-    }
-
 }
