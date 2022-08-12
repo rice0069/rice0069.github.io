@@ -55,7 +55,7 @@
             <a href="#">Connect with us<i class="fa-solid fa-caret-right"></i></a>
         </div> 
     </article>
-    <!-- about-us container -->
+    <!-- about-us container, holds all html elements that composes the about-us section of the site -->
     <article class="about-us">
         <div class="about-us-info container">
             <img id="about-us" src="images/about-us.jpg" alt="Lounge with a pool table">
@@ -74,7 +74,7 @@
 
     <div class="container">
         <h1>Our Services</h1>
-        <!-- services container -->
+        <!-- services container, holds all html elements that composes the "Our Services" section of the site -->
         <section class="services">
             <div class="digital-transformation">
                 <img id="digital" src="images/digital.jpg" alt="Person working on a phone and a laptop">
@@ -134,8 +134,8 @@
         <h1 id="team">Our Team</h1>
         <!-- our-team container -->
         <section class="our-team">
+            <img id="john" src="images/john.jpg" alt="Picture of John Doe">
             <div class="john-doe">
-                <img id="john" src="images/john.jpg" alt="Picture of John Doe">
                 <h2>John Doe</h2>
                 <h3>CEO and Co-owner</h3>
                 <hr>
@@ -143,9 +143,9 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam dignissimos blanditiis quo nemo. Excepturi, sunt, modi quos, minus voluptatibus asperiores ad soluta quia accusamus recusandae animi cumque eum. Fugiat.
                 </p>
             </div>
-
+            
+            <img id="bob" src="images/bob.jpg" alt="Picture of Bob Rite">
             <div class="bob-rite">
-                <img id="bob" src="images/bob.jpg" alt="Picture of Bob Rite">
                 <h2>Bob Rite</h2>
                 <h3>CFO and Co-owner</h3>
                 <hr>
@@ -155,18 +155,18 @@
             </div>
         </section>
 
+        <h1>Contact Us</h1>
         <!-- contact-us container -->
         <div class="contact-us container">
-            <h1>Contact Us</h1>
             <div class="contact">
                 <h2>Send us a message</h2>
                 <!-- Creates the input fields for name/email/message -->
                 <form id="contact-form" action="#" method="GET">
-                    <div class="one">
+                    <div>
                         <label for="name">Full Name</label>
                         <input id="name" type="text" name="name">
                     </div>
-                    <div class="two">
+                    <div>
                         <label for="email">Email</label>
                         <input id="email" type="text" name="email">
                     </div>
@@ -174,7 +174,7 @@
                         <label for="message">Message</label>
                         <textarea id="message"></textarea>
                     </div>
-                    <div class="three">
+                    <div>
                         <a href="#">Send</a>
                     </div>
                 </form>
@@ -194,7 +194,7 @@
                     <tbody>
                         <tr>
                             <td>Monday - Friday</td>
-                            <td>9am-6pm</td>
+                            <td>9 AM - 6 PM</td>
                         </tr>
                         <tr>
                             <td>Saturday - Sunday</td>
