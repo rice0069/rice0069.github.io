@@ -357,7 +357,7 @@ header {
 
 /* Styles the "Learn more" button in the "our-vision" article */
 .vision .container > a {
-    background-color:#222;
+    background-color: rgba(22, 22, 22, 0.7);
     border: 1px solid #c78c06;
     color: white;
     padding: 2rem;
@@ -556,7 +556,7 @@ footer {
    
     /* styles "learn more" button in the "our-vision" article to better fit the larger view */
     .vision .container > a {
-        background-color:#222;
+        background-color: rgba(22, 22, 22, 0.7);
         border: 1px solid #c78c06;
         color: white;
         padding: 2rem;
