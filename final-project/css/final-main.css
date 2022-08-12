@@ -383,7 +383,7 @@ header {
 
 .bob-rite {
     background-color: #ffe6ac;
-    margin-top: 1rem;
+    
 }
 
 #john {
@@ -391,6 +391,7 @@ header {
 }
 
 #bob {
+    /* margin-top: 1rem; */
     width: 100%;
 }
 
@@ -591,6 +592,10 @@ footer {
         grid-template-areas: 
         "e e w w"
         "z z f f"
+    }
+
+    #bob {
+        margin-top: 0;
     }
 
     /* sets the grid areas for each grid item in the "contact-us" section */
