@@ -383,7 +383,7 @@ header {
 
 .bob-rite {
     background-color: #ffe6ac;
-    
+    margin-top: 0; 
 }
 
 #john {
@@ -391,7 +391,7 @@ header {
 }
 
 #bob {
-    /* margin-top: 1rem; */
+    margin-top: 1rem;
     width: 100%;
 }
 
